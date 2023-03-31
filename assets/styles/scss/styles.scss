@@ -1,0 +1,22 @@
+@import './variables';
+@import './header';
+@import './home';
+@import './footer';
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: $font;
+}
+
+html {
+    font-size: 16px;
+}
+
+.container, .card-container, .category-container, .mid-header{
+    max-width: 1100px;
+    margin: auto;
+}
