@@ -204,6 +204,7 @@ header .navbar {
 
 main .slider {
   position: relative;
+  overflow: hidden;
 }
 main .slider .elements {
   display: flex;
@@ -249,6 +250,31 @@ main .slider .btns .right {
 }
 main .slider .btns .left {
   transform: rotate(-90deg);
+}
+main .slider .slider-count {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+main .slider .slider-count span {
+  width: 10px;
+  height: 10px;
+  background-color: #A6A6A6;
+  opacity: 0.8;
+  border-radius: 50%;
+  transition: all 0.5s linear;
+}
+main .slider .slider-count .selected {
+  background-color: white;
+  width: 15px;
+  height: 15px;
+  opacity: 1;
+  transition: all 0.5s linear;
 }
 main .title {
   margin-top: 20px;
