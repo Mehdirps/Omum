@@ -205,10 +205,16 @@ header .navbar {
 main .slider {
   position: relative;
 }
-main .slider figure {
-  height: 100%;
+main .slider .elements {
+  display: flex;
+  transition: 1s linear;
 }
-main .slider figure img {
+main .slider .elements figure {
+  flex: 1 0 100%;
+  height: 100%;
+  width: 100%;
+}
+main .slider .elements figure img {
   width: 100%;
   height: 100%;
 }
